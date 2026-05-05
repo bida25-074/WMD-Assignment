@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carry Your Cross - Home</title>
-    <link rel="stylesheet" href="styles.css">    
+    <link rel="stylesheet" href="styles.css">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,69 +15,99 @@
             <nav>
                 <a href="Store.html">SHOP</a> 
                 <a href="about.html">ABOUT US</a> 
-                <a href="contact us.html">CUSTOMER SUPPORT</a>
-                <a href="cart.html" class="cart">CART</a>
+                <a href="contact-us.html">CUSTOMER SUPPORT</a>
+                <a href="Cart.html" class="cart">CART</a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <h1>WELCOME TO CARRY YOUR CROSS</h1>
-        <p class="tagline">EMPOWERING THE YOUTH THROUGH FAITH AND FASHION</p><br>
-        
-        <div class="hero-container">
-            <div class="image">
-                <img src="C:\Users\user\OneDrive - Botswana Accountancy College\Desktop\WMD\WMDASSIGNMENT\Images\Cross.webp" alt="The cross" width="300" height="300">
-            </div>
-            <div class="verse">
+<main>
+    <div class="container">
+    <h1>WELCOME TO CARRY YOUR CROSS</h1>
+    <p class="tagline">EMPOWERING THE YOUTH THROUGH FAITH AND FASHION</p><br>
+   <div class="container my-5">  
+    <div class="row align-items-center my-5 g-5 justify-content-center">
+        <div class="col-12 col-md-6 text-center">
+            <img src="Images/Cross.webp"
+                 alt="The cross"
+                 class="img-fluid rounded border"
+                 style="max-height:500px; object-fit:cover;">
+        </div>
+
+        <div class="col-12 col-md-5">
+            <div class="verse p-4 border bg-white d-flex flex-column justify-content-center mx-auto"
+             style="min-height:400px; max-width:420px;">
                 <b>Matthew 16:24-26</b>
-                <p>Then Jesus told his disciples, “If anyone would come after me, let him deny himself and take up his cross and follow me. For whoever would save his life will lose it, but whoever loses his life for my sake will find it. For what will it profit a man if he gains the whole world and forfeits his soul? Or what shall a man give in return for his soul?”</p>
+                <p class="mt-2">
+                    Then Jesus told his disciples, “If anyone would come after me, let him deny himself and take up his cross
+                    and follow me. For whoever would save his life will lose it, but whoever loses his life for my sake will find it.
+                    For what will it profit a man if he gains the whole world and forfeits his soul? Or what shall a man give in
+                    return for his soul?”
+                </p>
             </div>
         </div>
-        
-        <h2>BROWSE CATEGORIES</h2>
-            <div class="categories">                
-                <div class="category-box">
-                  <a href="store.html#clothes">
+    </div>        
+</div>     
+
+  <div class="container my-5 px-4">
+    <h2>BROWSE CATEGORIES</h2>
+    <div class="row g-4">                
+        <div class="col-12 col-md-6">
+            <div class="category-box text-center p-4 border">
+                <a href="store.html#clothes">
                     <h3>CLOTHES</h3>
                     <p>(T-shirt, Hoodies, Hats)</p>
-                  </a>  
-                </div>
+                </a>
+            </div>
+        </div>
 
-                <div class="category-box">
-                  <a href="store.html#accessories">
+        <div class="col-12 col-md-6">
+            <div class="category-box text-center p-4 border">
+                <a href="store.html#accessories">
                     <h3>ACCESSORIES</h3>
                     <p>(Bracelets, Keychains, Necklaces)</p>
-                  </a>  
-                </div>
- 
+                </a>
             </div>
+        </div>
+    </div>
+  </div>
 
-        <h2>FEATURED CATEGORIES</h2>
-            <div class="featured">               
+    <h2>FEATURED CATEGORIES</h2>
+    <div class="container my-5 px-4">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-md-4">               
                 <div class="product">
                     <img src="https://m.media-amazon.com/images/I/B1pppR4gVKL._CLa%7C2140%2C2000%7C915Tj%2BfC7iL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png" alt="Christian Branded T-Shirt" height="300" width="300">
                     <b>Christian Branded T-Shirt</b>
-                    <p>Price: P 150.00</p>
-                    <button>Add to Cart</button>
+                    <p>Price: P150.00</p>
+                    <button class="addtocart"
+                            data-name="Christian Branded T-Shirt"
+                            data-price="150">Add to Cart</button>
                 </div>
-    
+            </div>
 
-
+            <div class="col-12 col-sm-6 col-md-4">
                 <div class="product">
                     <img src="https://wethebelieversclothing.com/cdn/shop/files/35.png?v=1746621488&width=800" alt="Gospel Hoodie" height="300" width="300">
                     <b>Gospel Hoodie</b>
-                    <p>Price: P 350.00</p>
-                    <button>Add to Cart</button>
+                    <p>Price: P350.00</p>
+                    <button class="addtocart"
+                            data-name="Gospel Hoodie"
+                            data-price="350">Add to cart</button>
                 </div>
+            </div>
 
-
+            <div class="col-12 col-sm-6 col-md-4">
                 <div class="product">
                     <img src="https://elevatedfaith.com/cdn/shop/files/More-Faith-Letter-Bracelet_01_540x.jpg?v=1769193404" alt="Faith Bracelet" height="300" width="300">
                     <b>Faith Bracelet</b>
-                    <p>Price: P 50.00</p>
-                    <button>Add to Cart</button>
+                    <p>Price: P50.00</p>
+                    <button class="addtocart"
+                            data-name="Faith Bracelet"
+                            data-price="50">Add to Cart</button>
                 </div>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -96,5 +127,9 @@
                 <a>&copy; 2026 Michael Mmusi</a>
             </div>
     </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
 </body>
 </html>
