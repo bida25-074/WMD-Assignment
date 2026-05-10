@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-      // check if item already exists
+
       const existingItem = cart.find(item => item.name === name);
 
       if (existingItem) {

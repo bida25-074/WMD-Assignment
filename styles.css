@@ -30,10 +30,10 @@ header {
 }
 
 .logo {
-    text-decoration: solid;
+    text-decoration: none;
     font-weight: 500;
     font-size:x-large;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, sans-serif;
     color: black;
 
 }
@@ -48,7 +48,7 @@ nav {
 nav a {
     color:black;
     margin: 0 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, sans-serif;
     text-decoration: solid;
     font-size: large;
 
@@ -69,16 +69,15 @@ nav a:hover {
 }
 
 h1 {
-    COLOR: #2c2828;
-   font-size: clamp(1.9rem, 5.5vw, 2.5rem);
-   margin: 45px 0 0;
+    color: #2c2828;
+    font-size: clamp(1.9rem, 5.5vw, 2.5rem);
+    margin: 45px 0 0;
 }
 
 .tagline {
     margin-top: 30px;
     font-size: clamp(1.05rem, 3.8vw, 1.25rem);
     color: rgb(22, 16, 16);
-    margin-top: 20px;
 }
 
 
@@ -89,75 +88,14 @@ h2 {
     margin: 60px 0 30px 0;
 }
 
-#cartTable {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    width: 100%;
-    border-collapse: collapse;
-}
-#cartTable th {
-    background-color: #f2f2f2;
-    font-weight: 600;
-}
-#cartTable td, #cartTable th {
-    padding: 12px;
-    text-align: center;
-    border: 1px solid #ddd;
-}
-#cartTable tbody tr:hover {
-    background-color: #f9f9f9;
+.cross-image {
+     max-height: 500px;
+    object-fit: cover;
 }
 
-.summary-box button {
-    cursor: pointer;
-    background-color: #111;
-    color: aquamarine;
-    padding: 12px 28px;
-    font-weight: 500;
-    border: none;
-    width: 100%;
-    margin-bottom: 10px;
-    transition: background 0.3s;
-    border-radius: 4px;
-}
-
-.summary-box p {
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-}
-.summary-box button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 12px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.summary-box button:hover {
-    background-color: #333;
-    font-weight: 600;
-}
-
-.summary-box .btn-primary {
-    background-color: #111;
-    border: none;
-    color: aquamarine;
-}
-.summary-box .btn-primary:hover {
-    background-color: #333;
-}
-
-.summary-box .btn-outline-danger {
-    background-color: transparent;
-    border: 2px solid #dc3545;
-    color: #dc3545;
-}
-
-.summary-box .btn-outline-danger:hover {
-    background-color: #dc3545;
-    color: #fff;
+.verse {
+    min-height: 400px;
+    max-width: 420px;
 }
 
 .category-box {
@@ -167,7 +105,7 @@ h2 {
     text-align: center;
     display: flex;
     justify-content: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, sans-serif;
     transition: background 0.3s;
 }
 
@@ -336,7 +274,76 @@ h2 {
     color: aquamarine;
 }
 
+#cartTable {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 100%;
+    border-collapse: collapse;
+}
+#cartTable th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+}
+#cartTable td, #cartTable th {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+#cartTable tbody tr:hover {
+    background-color: #f9f9f9;
+}
 
+.summary-box button {
+    cursor: pointer;
+    background-color: #111;
+    color: aquamarine;
+    padding: 12px 28px;
+    font-weight: 500;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+    border-radius: 4px;
+}
+
+.summary-box p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+.summary-box button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.summary-box button:hover {
+    background-color: #333;
+    font-weight: 600;
+}
+
+.summary-box .btn-primary {
+    background-color: #111;
+    border: none;
+    color: aquamarine;
+}
+.summary-box .btn-primary:hover {
+    background-color: #333;
+}
+
+.summary-box .btn-outline-danger {
+    background-color: transparent;
+    border: 2px solid #dc3545;
+    color: #dc3545;
+}
+
+.summary-box .btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
 footer {
     background-color: #111;
     color: #ddd;

@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
   tableBody.innerHTML = "";
 
   cart.forEach(item => {
-    let quantity = item.quantity || 1; // 🔥 FIX
+    let quantity = item.quantity || 1; 
 
     let row = tableBody.insertRow();
     row.insertCell(0).textContent = item.name;
